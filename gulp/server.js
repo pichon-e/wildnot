@@ -4,9 +4,6 @@ var path = require('path');
 var gulp = require('gulp');
 var conf = require('./conf');
 
-var browserSync = require('browser-sync');
-var browserSyncSpa = require('browser-sync-spa');
-
 var util = require('util');
 
 var proxyMiddleware = require('http-proxy-middleware');
@@ -35,13 +32,13 @@ function browserSyncInit(baseDir, browser) {
    */
   // server.middleware = proxyMiddleware('/users', {target: 'http://jsonplaceholder.typicode.com', changeOrigin: true});
 
-  browserSync.instance = browserSync.init({
+/*  browserSync.instance = browserSync.init({
     startPath: '/',
     server: server,
     browser: browser
-  });
+  });*/
 }
-
+/*
 browserSync.use(browserSyncSpa({
   selector: '[ng-app]'// Only needed for angular apps
 }));
@@ -61,3 +58,4 @@ gulp.task('serve:e2e', ['inject'], function () {
 gulp.task('serve:e2e-dist', ['build'], function () {
   browserSyncInit(conf.paths.dist, []);
 });
+*/
