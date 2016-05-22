@@ -47,7 +47,6 @@
 }
 
 .concept {
-    padding: 50px 0;
     background-color: #fafafa;
 
     h2 {
@@ -56,21 +55,25 @@
         letter-spacing: 2px;
         color: #555555;
         font-size: 30px;
-        margin-top:20px;
-        margin-bottom: 50px;
+        margin-top: 0;
+        padding-top: 40px;
         font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
     }
 
     .concept-container {
         width: 100%;
+        padding: 50px 0;
 
         .item {
             text-align: center;
 
             img {
+                width: 130px;
                 border-radius: 50%;
                 cursor: pointer;
-                box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
+                transition: all 0.2s ease-out;
+                /* box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22); */
 
                 &:hover {
                     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
@@ -93,7 +96,7 @@
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 2px;
-        color: #E53935;
+        color: #555555;
         font-size: 30px;
         font-weight: 600;
         font-family: 'Open Sans', sans-serif;
@@ -101,18 +104,66 @@
 
     .discover-container {
         width: 100%;
+                font-family: 'Open Sans', sans-serif;
 
         md-card {
-            height: 400px;
+            height: 300px;
+            background-color: #eaeaea;
         }
 
         img {
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
-            width: 100px;
-            height: 100px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             margin: 0 auto;
             margin-top: 25px;
+        }
+
+        p {
+            text-align: center;
+            padding: 20px;
+            line-height: 25px;
+            margin-top: 0;
+        }
+    }
+}
+
+.theme {
+    background-color: #eaeaea;
+    padding: 100px 0;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #E53935;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .theme-container {
+        width: 100%;
+
+        .item {
+            text-align: center;
+            outline: none;
+            img {
+                transition: all 0.2s ease-out;
+                cursor: pointer;
+                width: 250px;
+                border-radius: 3px;
+                z-index: 100;
+                box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
+
+                &:hover {
+                    z-index: 100;
+                    margin-top: -30px;
+                    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+                }
+            }
         }
     }
 }
@@ -124,11 +175,12 @@
 }
 
 md-dialog {
+    max-width: 55%;
     padding: 20px;
     z-index: 500;
 
     .categories {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -162,6 +214,50 @@ md-dialog {
         &:not([disabled]):hover {
             background-color: #E53935;
             opacity: 0.9;
+        }
+    }
+}
+
+.about-us {
+    padding: 50px 0;
+    padding-bottom: 100px;
+    background-color: #E53935;
+
+    h2 {
+        padding-top: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #fafafa;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .about-us-container {
+        .flex-15 {
+            text-align: center;
+        }
+
+        img {
+            text-align: center;
+            margin: 0 auto;
+            width: 150px;
+            border-radius: 50%;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            padding: 5px;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+
+            &.big {
+                font-size: 20px;
+            }
         }
     }
 }

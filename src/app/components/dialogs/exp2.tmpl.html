@@ -1,6 +1,24 @@
 <md-dialog>
     <md-dialog-content>
-        <p>ouououou</p>
-        <md-button>content</md-button>
+        <div layout="row" layout-wrap class="categories" layout-align="center center">
+            <img flex-gt-md="33" flex-md="50" flex-sm="100" flex-xs="100" src="../../assets/images/photo.jpg">
+            <img flex-gt-md="33" flex-md="50" flex-sm="100" flex-xs="100" src="../../assets/images/skate.jpg">
+            <img flex-gt-md="33" flex-md="50" flex-sm="100" flex-xs="100" src="../../assets/images/egoux.jpg">
+            <img flex-gt-md="33" flex-md="50" flex-sm="100" flex-xs="100" src="../../assets/images/meditation.jpg">
+            <img flex-gt-md="33" flex-md="50" flex-sm="100" flex-xs="100" src="../../assets/images/graf.jpg">
+            <img flex-gt-md="33" flex-md="50" flex-sm="100" flex-xs="100" src="../../assets/images/acupuncture.jpg">
+        </div>
+
+        <div hide-sm hide-xs layout="row" class="cat-buttons" layout-align="space-around center" layout-wrap>
+            <p flex="100">Alors convaincu ?</p>
+            <md-button ng-click="closeDialog()">J'hésite encore</md-button>
+
+            <md-button ng-click="start()">Carrément !</md-button>
+        </div>
+        <div hide-gt-sm layout="column" class="cat-buttons" layout-align="space-around center">
+            <p>Alors convaincu ?</p>
+            <md-button ng-click="start()" style="margin-bottom: 20px;">Carrément !</md-button>
+            <md-button ng-click="closeDialog()">J'hésite encore</md-button>
+        </div>
     </md-dialog-content>
 </md-dialog>

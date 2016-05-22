@@ -13,20 +13,43 @@
         <h2>Concept</h2>
         <div class="concept-container" layout="row" layout-wrap layout-align="center start">
             <div class="item" flex-xs="100" flex-sm="100" flex-md="45" flex-gt-md="25" layout="column" layout-align="center center">
-                <img src="./assets/images/karma.png">
+                <img src="./assets/images/message.png">
                 <p>Laissez votre <strong>curiosité</strong> vous surprendre</p>
             </div>
             <div class="item" flex-xs="100" flex-sm="100" flex-md="45" flex-gt-md="25" layout="column" layout-align="center center">
-                <img src="./assets/images/karma.png">
+                <img src="./assets/images/time.png">
                 <p><strong>Choisissez</strong> les catégories et la date de votre choix</p>
             </div>
             <div class="item" flex-xs="100" flex-sm="100" flex-md="45" flex-gt-md="25" layout="column" layout-align="center center">
-                <img src="./assets/images/karma.png">
+                <img src="./assets/images/pin.png">
                 <p>Wildnot t'envoie le <strong>lieu</strong> de ton rendez-vous</p>
             </div>
             <div class="item" flex-xs="100" flex-sm="100" flex-md="45" flex-gt-md="25" layout="column" layout-align="center center">
-                <img src="./assets/images/karma.png">
+                <img src="./assets/images/user.png">
                 <p>Vivez votre expérience <strong>unique</strong> !</p>
+            </div>
+        </div>
+    </div>
+    <div class="theme">
+        <h2>Les thèmes</h2>
+        <div class="theme-container" layout="row" layout-wrap layout-align="center center">
+            <div class="item" flex-xs="100" flex-sm="100" flex-md="50" flex-gt-md="15" ng-click="openDialog(1)">
+                <img src="./assets/images/outside.jpg">
+            </div>
+            <div class="item" flex-xs="100" flex-sm="100" flex-md="50" flex-gt-md="15" ng-click="openDialog(2)">
+                <img src="./assets/images/art.jpg">
+            </div>
+            <div class="item" flex-xs="100" flex-sm="100" flex-md="50" flex-gt-md="15" ng-click="openDialog(3)">
+                <img src="./assets/images/artisanat.jpg">
+            </div>
+            <div class="item" flex-xs="100" flex-sm="100" flex-md="50" flex-gt-md="15" ng-click="openDialog(4)">
+                <img src="./assets/images/monde.jpg">
+            </div>
+            <div class="item" flex-xs="100" flex-sm="100" flex-md="50" flex-gt-md="15" ng-click="openDialog(5)">
+                <img src="./assets/images/insolite.jpg">
+            </div>
+            <div class="item" flex-xs="100" flex-sm="100" flex-md="50" flex-gt-md="15" ng-click="openDialog(6)">
+                <img src="./assets/images/science.jpg">
             </div>
         </div>
     </div>
@@ -34,27 +57,59 @@
         <h2>Ils ont découvert</h2>
         <div class="discover-container" layout="row" layout-wrap layout-align="space-around center">
             <md-card flex="75" flex-md="40" flex-gt-md="20">
-                <img class="md-card-image" src="./assets/images/photographer.jpg" alt="image caption">
+                <img class="md-card-image" src="./assets/images/client1.jpg" alt="image caption">
                 <md-card-content>
-                    <h2>Card headline</h2>
-                    <p>Card content</p>
+                    <p>« J’ai plein d’amis qui seront intéressés ! » Coralie, 23 ans</p>
                 </md-card-content>
             </md-card>
             <md-card flex="75" flex-md="40" flex-gt-md="20">
-                <img class="md-card-image" src="./assets/images/photographer.jpg" alt="image caption">
+                <img class="md-card-image" src="./assets/images/client3.jpg" alt="image caption">
                 <md-card-content>
-                    <h2>Card headline</h2>
-                    <p>Card content</p>
+                    <p>« Il faut avancer dans la vie : se changer les idées, découvrir de nouvelles choses et de nouvelles personnes. » Émile, 27 ans</p>
                 </md-card-content>
             </md-card>
             <md-card flex="75" flex-md="40" flex-gt-md="20">
-                <img class="md-card-image" src="./assets/images/photographer.jpg" alt="image caption">
+                <img class="md-card-image" src="./assets/images/client2.jpg" alt="image caption">
                 <md-card-content>
-                    <h2>Card headline</h2>
-                    <p>Card content</p>
+                    <p>« Je te donne mon mail, j’ai envie de m’inscrire. » Jacques, 34 ans</p>
                 </md-card-content>
             </md-card>
 
+        </div>
+    </div>
+    <div class="about-us">
+        <h2>Notre équipe</h2>
+        <div class="about-us-container" layout="row" layout-align="center" layout-wrap>
+            <div flex-gt-md="15" flex-md="30" flex-sm="90" layout="column" layout-align="center center">
+                <img src="./assets/images/alice.jpg">
+                <p class="big">Alice</p>
+                <p>CHO</p>
+            </div>
+            <div flex-gt-md="15" flex-md="30" flex-sm="90" layout="column" layout-align="center center">
+                <img src="./assets/images/hector.jpg">
+                <p class="big">Hector</p>
+                <p>CFO</p>
+            </div>
+            <div flex-gt-md="15" flex-md="30" flex-sm="90" layout="column" layout-align="center center">
+                <img src="./assets/images/cyrielle.jpg">
+                <p class="big">Cyrielle</p>
+                <p>CFO</p>
+            </div>
+            <div flex-gt-md="15" flex-md="30" flex-sm="90" layout="column" layout-align="center center">
+                <img src="./assets/images/julien.jpg">
+                <p class="big">Julien</p>
+                <p>CFO</p>
+            </div>
+            <div flex-gt-md="15" flex-md="30" flex-sm="90" layout="column" layout-align="center center">
+                <img src="./assets/images/mathilde.jpg">
+                <p class="big">Mathilde</p>
+                <p>Designer</p>
+            </div>
+            <div flex-gt-md="15" flex-md="30" flex-sm="90" layout="column" layout-align="center center">
+                <img src="./assets/images/nicolas.jpg">
+                <p class="big">Nicolas</p>
+                <p>Dev</p>
+            </div>
         </div>
     </div>
 </div>
