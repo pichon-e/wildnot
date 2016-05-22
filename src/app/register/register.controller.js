@@ -6,7 +6,7 @@
     .controller('RegisterController', RegisterController);
 
   /** @ngInject */
-  function RegisterController($timeout, webDevTec, toastr, $mdDialog, $scope) {
+  function RegisterController($mdDialog, $scope) {
     var vm = this;
     $scope.lundi = false;
     $scope.mardi = false;
