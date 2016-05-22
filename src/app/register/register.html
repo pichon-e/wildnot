@@ -1,0 +1,97 @@
+<div class="register" >
+    <img class="background" src="./assets/images/espresso-in-making.jpg">
+    <div class="register-container" layout-xs="column" layout="row" layout-align="center center">
+    <md-card flex="95" layout-margin flex-gt-sm="55" layout="row" layout-align="space-around center" layout-wrap>
+        <div flex="90" flex-gt-sm="35" layout="column" layout-wrap layout-align="space-around center">
+            <div flex="100" id="facebook" layout="row">
+                <div class="head" layout="row" layout-align="center center">
+                    <img src="./assets/images/facebook.png">
+                </div>
+                <div class="tail">
+                    <p> Se connecter avec Facebook</p>
+                </div>
+            </div>
+            <div flex="100" id="google" layout="row">
+                <div class="head" layout="row" layout-align="center center">
+                    <img src="./assets/images/google-plus.png">
+                </div>
+                <div class="tail">
+                    <p> Se connecter avec Gmail</p>
+                </div>
+            </div>
+            <div>
+                <h2>Inscription</h2>
+                <md-input-container>
+                    <label>Email</label>
+                    <input type="email" ng-model="vm.email">
+                </md-input-container>
+                <md-input-container >
+                    <label>Password</label>
+                    <input type="password" ng-model="vm.password">
+                </md-input-container>
+            </div>
+        </div>
+        <div hide-xs hide-sm flex="1" class="custom-divider"></div>
+        <div flex="90" flex-gt-sm="60" layout="row" layout-wrap class="pricing" layout-align="space-around center">
+            <h2>Sélectionne tes disponibilités</h2>
+<!--             <md-datepicker flex="100" ng-model="myDate" md-placeholder="Enter date"></md-datepicker> -->
+                <div layout="row" style="margin-left: 50px;" layout-wrap>
+                    <md-checkbox class="blue" flex="100" flex-gt-sm="20" ng-model="lundi">
+                        <span >Lundi</span>
+                    </md-checkbox>
+                    <md-checkbox class="blue" flex="100" flex-gt-sm="20" ng-model="mardi">
+                        <span >Mardi</span>
+                    </md-checkbox>
+                    <md-checkbox class="blue" flex="100" flex-gt-sm="20" ng-model="mercredi">
+                        <span >Mercredi</span>
+                    </md-checkbox>
+                    <md-checkbox class="blue" flex="100" flex-gt-sm="20" ng-model="jeudi">
+                        <span >Jeudi</span>
+                    </md-checkbox>
+                    <md-checkbox class="blue" flex="100" flex-gt-sm="20" ng-model="vendredi">
+                        <span >Vendredi</span>
+                    </md-checkbox>
+                    <md-checkbox class="blue" flex="100" flex-gt-sm="20" ng-model="samedi">
+                        <span >Samedi</span>
+                    </md-checkbox>
+                    <md-checkbox class="blue" flex="33" flex-gt-sm="20" ng-model="dimanche">
+                        <span >Dimanche</span>
+                    </md-checkbox>
+                </div>
+            <h2>Choisi ta formule</h2>
+            <div class="choices" layout="row" layout-wrap layout-align="space-aroung center">
+
+                <md-card flex="90" flex-gt-sm="30" ng-class="{selected: item == 1}" ng-click="item = 1">
+                    <div class="header">
+                        <p>J'essaie</p>
+                    </div>
+                    <div class="content" layout="row" layout-align="center end">
+                        <p>1</p>
+                        <p> / exp</p>
+                    </div>
+                </md-card>
+                <md-card flex="90" flex-gt-sm="30" ng-class="{selected: item == 2}" ng-click="item = 2">
+                    <div class="header">
+                        <p>J'adore</p>
+                    </div>
+                    <div class="content" layout="row" layout-align="center end">
+                        <p>4</p>
+                        <p> / exp</p>
+                    </div>
+                </md-card>
+                <md-card flex="90" flex-gt-sm="30" ng-class="{selected: item == 3}" ng-click="item = 3">
+                    <div class="header">
+                        <p>Je suis accro</p>
+                    </div>
+                    <div class="content" layout="row" layout-align="center end">
+                        <p>12</p>
+                        <p> / exp</p>
+                    </div>
+                </md-card>
+            </div>
+            <h2 flex="100">Et lance toi !</h2>
+            <md-button class="stripe" ng-click="alert()">Stripe</md-button>
+        </div>
+    </md-card>
+    </div>
+</div>
